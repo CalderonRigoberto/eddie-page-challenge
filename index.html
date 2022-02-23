@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Devchallenges</title>
+
+
+</head>
+
+<body>
+  <div class="wrapp">
+    <header class="navegador">
+      <h2>Eddie</h2>
+      <nav id="menu" class="navegador__contenedor">
+        <img src="img/icons8-eliminar-50.png" onclick="closeMenuF()" alt="Menu hamburgesa javascript" class="close_menu">
+        <div class="nav__list">
+          <a href="#home" onclick="optionClick()">Home</a>
+          <a href="#services" onclick="optionClick()" >Services</a>
+          <a href="#work" onclick="optionClick()">Our works</a>
+          <a href="#client" onclick="optionClick()">Clients</a>
+          <a href="#contact" onclick="optionClick()">Contact</a>
+        </div>
+      </nav>
+      <img src="img/icons8-menú-redondeado-50.png" onclick="openMenu()" alt="Menu hamburgesa javascript" class="menu">
+    </header>
+
+    <div class="section__uno" id="home">
+      <div class="section__uno--primer">
+        <p>Unhappy with your website?</p>
+        <h1>We create beautiful and fast web services</h1>
+      </div>
+      <img src="img/heroImage.jpg" alt="team work having a meet">
+      <div class="section__uno--segundo">
+        <h2>Story, emotion and purpose</h2>
+        <p class="section__uno--segundo-parrafo--uno">We help transform your ideas into real world applications that
+          will outperform your toughest competition and
+          help you achieve your strategic goals in short period of time.</p>
+
+        <p class="section__uno--segundo-parrafo--dos">Want us to contact you?</p>
+
+        <div class="section__uno--segundo-email">
+          <input type="email" placeholder="Email" autofocus>
+          <button>Join</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section__servicios" id="services">
+      <h2>We offer high demand services</h2>
+      <div class="section__servicios--cards">
+        <div class="card">
+          <div class="card__icon uno">
+            <span class="material-icons">
+              edit
+            </span>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.</p>
+
+          <button>Get started</button>
+        </div>
+        <div class="card">
+          <div class="card__icon dos">
+            <span class="material-icons">
+              code
+            </span>
+          </div>
+          <h3>Front End</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.</p>
+          <button>Get started</button>
+        </div>
+        <div class="card">
+          <div class="card__icon tres">
+            <span class="material-icons">
+              toc
+            </span>
+          </div>
+          <h3>Back End</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.</p>
+          <button>Get started</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section__proyectos" id="work">
+      <div class="section__proyectos--titulo">
+        <h2>Good design means good business</h2>
+      </div>
+
+      <div class="section__proyectos--contenedor">
+        <div class="card__proyecto mt">
+          <img src="img/smarthome.jpg" alt="dashboard app">
+          <p class="app__type">Full stack application</p>
+          <p class="name__app">Smart home dashboard</p>
+        </div>
+
+        <div class="card__proyecto">
+          <img src="img/onboard.png" alt="oboard app">
+          <p class="app__type">UX/UI design</p>
+          <p class="name__app">Onboard application</p>
+        </div>
+      </div>
+      <div class="section__proyectos--contenedor">
+        <div class="card__proyecto mt">
+          <img src="img/booking.png" alt="booking system app">
+          <p class="app__type">Mobile application</p>
+          <p class="name__app">Booking system</p>
+        </div>
+
+        <div class="card__proyecto">
+          <img src="img/juice-product.png" alt="frontend app about juice">
+          <p class="app__type">Front End application</p>
+          <p class="name__app">Juice product homepage</p>
+        </div>
+      </div>
+      <div class="see__more">
+        <a href="#">see more &#8594</a>
+      </div>
+
+    </div>
+
+    <div class="section__team" id="clients">
+      <div class="section__team--textos">
+        <p class="rj">Meet the team</p>
+        <h2>We are chilled and a laidback team</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="section__team--imagenes">
+
+        <div class="imagen__dos">
+          <img src="img/person3.png" alt="women walking">
+        </div>
+        <div class="imagen__uno">
+          <img class="uno" src="img/person1.png" alt="man smiling">
+          <img class="dos" src="img/person2.png" alt="man smiling">
+        </div>
+      </div>
+    </div>
+
+    <div class="section__testimonial">
+      <p>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+      </p>
+      <div class="testimonial__perfil">
+        <img src="img/person4.png" alt="man smiling">
+        <div class="testimonial__text">
+          <h3>Carlos Tran</h3>
+          <p>The Decorate Gatsby</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__wrapp">
+      <div class="lista">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Our works</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="footer__element">
+        <h2>Eddie</h2>
+        <div class="lista__iconos">
+          <a href="#"><img src="img/instagram.svg" alt="instagram icon"></a>
+          <a href="#"><img src="img/linkedin.svg" alt="linkdin icon"></a>
+          <a href="#"><img src="img/twitter.svg" alt="twtitter icon"></a>
+        </div>
+      </div>
+
+      <div class="footer__email" id="contact">
+        <p>Want us to contact you?</p>
+        <div class="section__footer--segundo-email">
+          <input type="email" placeholder="Email" autofocus>
+          <button>Join</button>
+        </div>
+      </div>
+
+    </div>
+    <p>created by <a href="https://github.com/CalderonRigoberto">@CalderonRigoberto</a> - devChallenges.io</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
